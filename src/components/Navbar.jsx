@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { FiChevronDown, FiPhone, FiMail } from 'react-icons/fi'
+import dettroinLogo from '../assets/dettroin-logo.png'
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -73,9 +74,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-18 lg:h-20">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center shadow-lg group-hover:shadow-accent/30 transition-shadow duration-300">
-                <span className="text-white font-playfair text-xl font-bold">D</span>
-              </div>
+              <img src={dettroinLogo} alt="Dettroin International School Logo" className="w-12 h-12 rounded-xl object-contain shadow-lg group-hover:shadow-accent/30 transition-shadow duration-300" />
               <div className="hidden sm:block">
                 <h1 className="font-playfair text-primary font-bold text-lg leading-tight">
                   DETTROIN

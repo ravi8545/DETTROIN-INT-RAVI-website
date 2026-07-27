@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import dettroinLogo from '../assets/dettroin-logo.png'
 
 export default function Preloader() {
   return (
@@ -15,9 +16,7 @@ export default function Preloader() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6"
         >
-          <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-accent to-accent-warm flex items-center justify-center shadow-2xl">
-            <span className="text-white font-playfair text-3xl font-bold">D</span>
-          </div>
+          <img src={dettroinLogo} alt="Dettroin International School Logo" className="w-24 h-24 mx-auto rounded-full object-contain shadow-2xl" />
         </motion.div>
 
         <motion.h1

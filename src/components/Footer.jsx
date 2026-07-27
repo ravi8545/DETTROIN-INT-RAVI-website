@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FiMapPin, FiPhone, FiMail, FiClock, FiArrowUp } from 'react-icons/fi'
+import dettroinLogo from '../assets/dettroin-logo.png'
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa'
 
 const footerLinks = {
@@ -60,9 +61,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-accent-warm flex items-center justify-center shadow-lg">
-                <span className="text-white font-playfair text-xl font-bold">D</span>
-              </div>
+              <img src={dettroinLogo} alt="Dettroin International School Logo" className="w-12 h-12 rounded-xl object-contain shadow-lg" />
               <div>
                 <h2 className="font-playfair text-white font-bold text-xl">DETTROIN</h2>
                 <p className="text-[10px] tracking-[0.3em] text-white/40 uppercase font-outfit">International School</p>
