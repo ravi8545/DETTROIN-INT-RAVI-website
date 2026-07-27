@@ -33,9 +33,9 @@ const navLinks = [
     name: 'Admission',
     href: '/#admission',
     dropdown: [
-      { name: 'Process', href: '/#admission' },
-      { name: 'Fee Structure', href: '/#admission' },
-      { name: 'Apply Online', href: '/#admission' }
+      { name: 'Process', path: '/admission-process' },
+      { name: 'Fee Structure', path: '/fee-structure' },
+      { name: 'Apply Online', path: '/apply-online' }
     ]
   },
   { name: 'Contact Us', href: '/#contact' },

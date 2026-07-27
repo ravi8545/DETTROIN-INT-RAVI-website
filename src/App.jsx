@@ -16,6 +16,9 @@ import OurVision from './pages/OurVision'
 import OurMission from './pages/OurMission'
 import Management from './pages/Management'
 import History from './pages/History'
+import AdmissionProcess from './pages/AdmissionProcess'
+import FeeStructure from './pages/FeeStructure'
+import ApplyOnline from './pages/ApplyOnline'
 
 function HomePage() {
   return (
@@ -51,6 +54,9 @@ function App() {
       <Route path="/our-mission" element={<PageLayout><OurMission /></PageLayout>} />
       <Route path="/management" element={<PageLayout><Management /></PageLayout>} />
       <Route path="/history" element={<PageLayout><History /></PageLayout>} />
+      <Route path="/admission-process" element={<PageLayout><AdmissionProcess /></PageLayout>} />
+      <Route path="/fee-structure" element={<PageLayout><FeeStructure /></PageLayout>} />
+      <Route path="/apply-online" element={<PageLayout><ApplyOnline /></PageLayout>} />
     </Routes>
   )
 }

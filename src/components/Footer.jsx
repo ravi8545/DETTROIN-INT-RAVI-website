@@ -17,12 +17,12 @@ const footerLinks = {
     { name: 'Senior Secondary', href: '/#programs' },
     { name: 'Curriculum', href: '/#programs' }
   ],
-  'Quick Links': [
+  'Admissions': [
+    { name: 'Admission Process', path: '/admission-process' },
+    { name: 'Fee Structure', path: '/fee-structure' },
+    { name: 'Apply Online', path: '/apply-online' },
+    { name: 'Contact Us', href: '/#contact' },
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/#about' },
-    { name: 'Admissions', href: '/#admission' },
-    { name: 'Infrastructure', href: '/#campus' },
-    { name: 'Contact Us', href: '/#contact' }
   ],
 }
 
