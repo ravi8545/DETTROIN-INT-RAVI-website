@@ -1,16 +1,68 @@
-# React + Vite
+# DETTROIN INT RAVI Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite website for the DETTROIN INT RAVI project. This repository contains the main frontend application, built with Vite, React, Tailwind CSS, and React Router.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive marketing website layout
+- Program and admission information pages
+- Student and parent portal sections
+- Animated sections with `framer-motion`
+- Intersection-based reveal effects and counters
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- React Router DOM 7
+- Framer Motion
+- ESLint
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+## Project structure
+
+- `src/` - main app source files
+- `src/components/` - reusable UI components
+- `src/layouts/` - page layouts
+- `src/pages/` - static route pages
+- `public/` - static assets
+
+## Notes
+
+This project is a frontend application only. If you have a separate backend or deployment configuration, include that in the repository root or a dedicated directory.
+
+## License
+
+Add your preferred license information here.
