@@ -5,10 +5,17 @@ A React + Vite website for the DETTROIN INT RAVI project. This repository contai
 ## Features
 
 - Responsive marketing website layout
+- Comprehensive Academic section pages (Primary Wing, Middle School, Senior Secondary)
 - Program and admission information pages
 - Student and parent portal sections
 - Animated sections with `framer-motion`
 - Intersection-based reveal effects and counters
+
+## Recent Updates
+
+- Added dedicated pages for **Primary Wing**, **Middle School**, and **Senior Secondary** sections under Academics.
+- Integrated new academic pages into the main navigation with smooth dropdown menus.
+- Validated and updated high-quality educational placeholder imagery.
 
 ## Tech stack
 
