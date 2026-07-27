@@ -68,8 +68,8 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <span className="text-gold-light font-medium">📅 Admissions Open 2026-27</span>
             <span className="text-white/40">|</span>
-            <a href="#" className="hover:text-accent transition-colors">Student Portal</a>
-            <a href="#" className="hover:text-accent transition-colors">Parent Portal</a>
+            <Link to="/student-portal" className="hover:text-accent transition-colors">Student Portal</Link>
+            <Link to="/parent-portal" className="hover:text-accent transition-colors">Parent Portal</Link>
           </div>
         </div>
       </div>

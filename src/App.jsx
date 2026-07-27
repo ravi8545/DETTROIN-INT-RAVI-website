@@ -19,6 +19,8 @@ import History from './pages/History'
 import AdmissionProcess from './pages/AdmissionProcess'
 import FeeStructure from './pages/FeeStructure'
 import ApplyOnline from './pages/ApplyOnline'
+import StudentPortal from './pages/StudentPortal'
+import ParentPortal from './pages/ParentPortal'
 
 function HomePage() {
   return (
@@ -57,6 +59,8 @@ function App() {
       <Route path="/admission-process" element={<PageLayout><AdmissionProcess /></PageLayout>} />
       <Route path="/fee-structure" element={<PageLayout><FeeStructure /></PageLayout>} />
       <Route path="/apply-online" element={<PageLayout><ApplyOnline /></PageLayout>} />
+      <Route path="/student-portal" element={<PageLayout><StudentPortal /></PageLayout>} />
+      <Route path="/parent-portal" element={<PageLayout><ParentPortal /></PageLayout>} />
     </Routes>
   )
 }
