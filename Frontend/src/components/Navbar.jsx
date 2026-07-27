@@ -21,9 +21,9 @@ const navLinks = [
     name: 'Academics',
     href: '/#programs',
     dropdown: [
-      { name: 'Primary Wing', href: '/#programs' },
-      { name: 'Middle School', href: '/#programs' },
-      { name: 'Senior Secondary', href: '/#programs' },
+      { name: 'Primary Wing', path: '/primary-wing' },
+      { name: 'Middle School', path: '/middle-school' },
+      { name: 'Senior Secondary', path: '/senior-secondary' },
       { name: 'Curriculum', href: '/#programs' }
     ]
   },

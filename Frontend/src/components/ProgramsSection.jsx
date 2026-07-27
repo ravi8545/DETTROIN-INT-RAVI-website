@@ -8,7 +8,7 @@ const programs = [
     id: 1,
     title: 'Pre-Primary',
     grades: 'Nursery - KG',
-    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d7dd0?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80',
     description: 'A nurturing environment where young minds explore, create, and build the foundations of lifelong learning through play-based education.',
     features: ['Activity-Based Learning', 'Smart Classrooms', 'Dedicated Play Areas'],
     color: 'from-pink-500 to-rose-500',

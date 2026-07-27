@@ -21,6 +21,9 @@ import FeeStructure from './pages/FeeStructure'
 import ApplyOnline from './pages/ApplyOnline'
 import StudentPortal from './pages/StudentPortal'
 import ParentPortal from './pages/ParentPortal'
+import PrimaryWing from './pages/PrimaryWing'
+import MiddleSchool from './pages/MiddleSchool'
+import SeniorSecondary from './pages/SeniorSecondary'
 
 function HomePage() {
   return (
@@ -61,6 +64,9 @@ function App() {
       <Route path="/apply-online" element={<PageLayout><ApplyOnline /></PageLayout>} />
       <Route path="/student-portal" element={<PageLayout><StudentPortal /></PageLayout>} />
       <Route path="/parent-portal" element={<PageLayout><ParentPortal /></PageLayout>} />
+      <Route path="/primary-wing" element={<PageLayout><PrimaryWing /></PageLayout>} />
+      <Route path="/middle-school" element={<PageLayout><MiddleSchool /></PageLayout>} />
+      <Route path="/senior-secondary" element={<PageLayout><SeniorSecondary /></PageLayout>} />
     </Routes>
   )
 }
