@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import StatsBar from './components/StatsBar'
@@ -10,17 +11,13 @@ import TestimonialsSection from './components/TestimonialsSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 import Preloader from './components/Preloader'
+import PageLayout from './layouts/PageLayout'
+import OurVision from './pages/OurVision'
+import OurMission from './pages/OurMission'
+import Management from './pages/Management'
+import History from './pages/History'
 
-function App() {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2500)
-    return () => clearTimeout(timer)
-  }, [])
-
-  if (loading) return <Preloader />
-
+function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -34,6 +31,27 @@ function App() {
       <CTASection />
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2500)
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (loading) return <Preloader />
+
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/our-vision" element={<PageLayout><OurVision /></PageLayout>} />
+      <Route path="/our-mission" element={<PageLayout><OurMission /></PageLayout>} />
+      <Route path="/management" element={<PageLayout><Management /></PageLayout>} />
+      <Route path="/history" element={<PageLayout><History /></PageLayout>} />
+    </Routes>
   )
 }
 

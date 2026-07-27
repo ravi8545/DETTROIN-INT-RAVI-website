@@ -1,12 +1,29 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { FiMapPin, FiPhone, FiMail, FiClock, FiArrowUp } from 'react-icons/fi'
 import dettroinLogo from '../assets/dettroin-logo.png'
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa'
 
 const footerLinks = {
-  'Quick Links': ['Home', 'About Us', 'Academics', 'Admissions', 'Contact Us', 'Careers'],
-  'Academics': ['Pre-Primary', 'Primary Wing', 'Middle School', 'Senior Secondary', 'Curriculum', 'Assessment'],
-  'Resources': ['Student Portal', 'Parent Portal', 'School Calendar', 'Newsletter', 'Gallery', 'Blog'],
+  'About Us': [
+    { name: 'Our Vision', path: '/our-vision' },
+    { name: 'Our Mission', path: '/our-mission' },
+    { name: 'Management', path: '/management' },
+    { name: 'History', path: '/history' },
+  ],
+  'Academics': [
+    { name: 'Primary Wing', href: '/#programs' },
+    { name: 'Middle School', href: '/#programs' },
+    { name: 'Senior Secondary', href: '/#programs' },
+    { name: 'Curriculum', href: '/#programs' }
+  ],
+  'Quick Links': [
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/#about' },
+    { name: 'Admissions', href: '/#admission' },
+    { name: 'Infrastructure', href: '/#campus' },
+    { name: 'Contact Us', href: '/#contact' }
+  ],
 }
 
 const socialLinks = [
@@ -116,13 +133,22 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-white/40 hover:text-accent text-sm font-inter hover:pl-2 transition-all duration-300"
-                    >
-                      {link}
-                    </a>
+                  <li key={link.name}>
+                    {link.path ? (
+                      <Link
+                        to={link.path}
+                        className="text-white/40 hover:text-accent text-sm font-inter hover:pl-2 transition-all duration-300 block"
+                      >
+                        {link.name}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href || '#'}
+                        className="text-white/40 hover:text-accent text-sm font-inter hover:pl-2 transition-all duration-300 block"
+                      >
+                        {link.name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
